@@ -1,0 +1,8 @@
+Amend mod/feedback/item/textarea to include max character length
+
+1. mod/feedback/item/textarea/textarea_form.php
+- line 53, add new element in function definition
+- line 72-76, in function get_data
+2. mod/feedback/item/textarea/lib.php
+- line 57, line 61 add itemlength in function build_editform
+- line 195, 197 add length value and maxlength attribute in function complete_form_element
